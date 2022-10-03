@@ -1,0 +1,422 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*CONTAINER
+===================================================*/
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+/*HEADER
+===================================================*/
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    
+}
+
+.header.fixed {
+    position: fixed;
+    border-bottom: 3px solid #2B3240;
+    background-color: #2B3240;
+    border-radius: 5px;
+    animation: header__anim 0.5s linear; 
+}
+@keyframes header__anim{
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+
+
+.header__inner {
+    padding-top: 40px;
+    margin-left: 30px;
+    padding-left: 10px;
+    margin-right: 45px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    display: flex; /*Гибкое изменение расположения элементов*/
+    justify-content: space-between; /*Расположение элементов по бокам*/
+    align-items: center; /*Выравнивание всех элементов по центру*/
+    
+}
+.header.fixed .header__inner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.logo__img {
+    height: 50px;
+    width: auto;
+}
+
+.nav {
+    display: flex; /*Гибкое изменение расположения элекментов*/
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none; /*Убираем подчеркивание*/
+    font-size: 16px;
+    margin-left: 45px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color .3s linear; /*Плавный переход*/
+}
+
+.nav__link:first-child{ /*Изменение первого элемента*/
+    margin-left: 0; /*Убираем отступ с первого элемента*/
+}
+
+.nav__link:hover { /*Изменение при наведении курсором*/
+    background-color: #434D62;
+}
+
+.nav__link.monday__nav.fixed {
+    background-color: #434D62;
+}
+.nav__link.tuesday__nav.fixed {
+    background-color: #434D62;
+}
+.nav__link.wednesday__nav.fixed {
+    background-color: #434D62;
+}
+.nav__link.thursday__nav.fixed {
+    background-color: #434D62;
+}
+.nav__link.friday__nav.fixed {
+    background-color: #434D62;
+}
+/*MONDAY
+===================================================*/
+.monday {
+    display: flex;
+    flex-direction: column; /*Элементы идут друг под другом сверху вниз*/
+    background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
+    height: 750px;
+
+}
+.schedule__container {
+
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.schedule {
+    height: 317px;
+    width: 250px;
+    
+}
+/*TUESDAY
+===================================================*/
+
+.tuesday {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
+    background-size: cover;
+    height: 750px;
+}
+
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+border-color: #FFF ;
+}
+.cube:nth-child(2) {
+animation-delay: 2s;
+left: 25vw;
+top: 40vh;
+}
+.cube:nth-child(3) {
+animation-delay: 4s;
+left: 75vw;
+top: 50vh;
+}
+.cube:nth-child(4) {
+animation-delay: 6s;
+left: 90vw;
+top: 10vh;
+}
+.cube:nth-child(5) {
+animation-delay: 8s;
+left: 10vw;
+top: 85vh;
+}
+.cube:nth-child(6) {
+animation-delay: 10s;
+left: 50vw;
+top: 10vh;
+}
+
+
+@keyframes cube {
+from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+}
+to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+}
+}
+
+/*WEDNESDAY
+===================================================*/
+
+.wednesday {
+    
+    height: 750px;
+}
+
+.bg_team {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-20deg, #E49E83 50%, #F6F3CE 50%);
+    bottom:0;
+    left:-100%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2_team {
+animation-direction:alternate-reverse;
+animation-duration:4s;
+}
+
+.bg3_team {
+animation-duration:5s;
+}
+
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+/*THURSDAY
+===================================================*/
+
+.thursday {
+    background-color: #fff;
+    height: 750px;
+}
+
+.bg-animado-blue{
+    background-color: #0770ac;
+
+    background: linear-gradient(24deg, #7be9fb, #55b5ec, #ffd323);
+    background-size: 600% 600%;
+
+    animation: AnimationName 11s ease infinite;
+}
+
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 50%}
+}
+
+/*FRIDAY
+===================================================*/
+
+.friday {
+    height: 750px;
+}
+
+/*END
+=========================================*/
+.end {
+    background-color: #2B3240;
+    height: 110px;
+}
+
+.end__inner {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px
+}
+
+.end__text {
+    color: #fff;
+    transition: color .3s linear;
+}
+
+.end__text:hover {
+    color: gray;
+}
+
+.burger{
+    display: none;
+    background: none;
+    border: 0;
+    padding: 9px 2px;
+}
+
+.burger__item{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+
+    font-size: 0;
+    color: transparent;
+
+    position: relative;
+}
+
+.burger__item::before,
+.burger__item::after{
+    content: "menu";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+    background-color: #fff;
+}
+
+.burger__item::before{
+    width: 30px;
+    top: -8px;
+}
+
+.burger__item::after{
+    width: 26px;
+    bottom: -8px;
+}
+/*MEDIA
+=========================================================*/
+@media(max-width: 730px){
+
+    .nav.show{
+        display: flex;
+    }
+
+    .nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        /*background-color: #643A79;*/
+        background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
+    }
+
+    .burger{
+        display: block;
+        margin-top: 0;
+    }
+
+    
+
+    .header__inner{
+        margin-left: 15px;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 10px;
+        max-height: 50px;
+        width: auto;
+    }
+
+    .header.fixed .header__inner {
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+
+    .logo__inner{
+        height: 35px;
+        width: 35px;
+    }
+
+
+    .container{
+        width: 374px;
+    }
+
+    .header{
+        min-width: 374px;
+        height: 55px;
+    }
+
+    .monday,
+    .tuesday,
+    .thursday,
+    .wednesday,
+    .friday{
+        height: 490px;
+    }
+
+    .schedule__container{
+        padding-top: 115px;
+    }
+
+    .schedule{
+        height: 340px;
+    }
+
+    .end__inner{
+        padding-top: 10px;
+    }
+
+    .end{
+        height: 50px
+    }
+}

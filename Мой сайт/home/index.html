@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Кодировка по умолчанию utf-8-->
+    <meta charset="utf-8">
+    <!--Ширина сайта равна ширине устройства-->
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <!--Подключение файла со стилями-->
+    <link rel="stylesheet" href="style_home.css">
+    <!--Подключение шрифта-->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Bad+Script&family=Bellota&family=Cormorant+Infant&display=swap" rel="stylesheet">
+    <!--Подключение jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<!--HEADER
+==========================================================================-->
+<div class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo__inner">
+                <a href="index.html">
+                    <img src="logo1.png" alt="" class="logo__img">
+                </a>
+            </div>
+            <div class="nav" id="nav">
+                <a class="nav__link start__nav" href="#" data-scroll="#intro">Начало</a>
+                <a class="nav__link services__nav" href="#" data-scroll="#services">Услуги</a>
+                <a class="nav__link team__nav" href="#" data-scroll="#team">Команда</a>
+                <a class="nav__link skills__nav" href="#" data-scroll="#skills">Умения</a>
+                <a class="nav__link portfolio__nav" href="#" data-scroll="#portfolio">Портфолио</a>
+            </div>
+            <button class="burger" type="button" id="nav__toogle">
+                <span class="burger__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!--INTRO
+-=====================================================s====================-->
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <!--<h1 class="intro__text">
+                Привет всем! Мы решили попробовать себя в новой сфере
+            </h1>
+            <h1 class="intro__text section">
+                и создали свой собвстенный сайт, на котором есть расписание.
+            </h1>-->
+            <h2 class="intro__text funny-title section-title">Привет всем! Это наш мини проект</h2>
+
+
+
+        </div>
+        <div class="button">
+            <a class="animated-button" href="schedule/schedule.html">
+                <span></span>
+                <span></span>
+                Расписание
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--SERVICES
+==========================================================================-->
+<div class="services" id="services">
+    <div class="container section">
+        <div class="serv__inner">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="title__text revealUp">
+                НАШИ УСЛУГИ
+            </div>
+            <div class="line__container">
+                <div class="line__team"></div>
+            </div>
+            <div class="podtitle__inner">
+                <h1 class="podtitle__text">
+                    Мы работаем как с частными лицами, так и с компаниями со всего мира
+                </h1>
+                <h1 class="podtitle__text">
+                    над созданием потрясающих веб-сайтов и приложений.
+                </h1>
+        </div>
+        
+        </div>
+        <div class="services__inner">
+            <div class="cells">
+                <img src="services_img/first.png" alt=""  class="img">
+                <div class="title__cells">
+                    БРЕНДИНГ
+                </div>
+                <div class="podtitle__cells">
+                    Создание идеологии бренда, имиджа и ценности бизнеса до появления на рынке.
+                </div>
+            </div>
+            <div class="cells">
+                <img src="services_img/second.png" alt=""  class="img">
+                <div class="title__cells">
+                    ДИЗАЙН
+                </div>
+                <div class="podtitle__cells">
+                    Создание приятного внешнего вида приложения, сайта или 3D модели.
+                </div>
+            </div>
+            <div class="cells">
+                <img src="services_img/third.png" alt=""  class="img">
+                <div class="title__cells">
+                    РАЗВИТИЕ
+                </div>
+                <div class="podtitle__cells">
+                    Наша команда постоянно развивается, осваивая новые возможности и техники работы.
+                </div>
+            </div>
+            <div class="cells">
+                <img src="services_img/fourth.png" alt="" class="img">
+                <div class="title__cells">
+                    ТЕХНОЛОГИИ
+                </div>
+                <div class="podtitle__cells">
+                    У нас имеются новейшие технологии и разработки, взятые из сети Internet.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--OUR TEAM
+==========================================================================-->
+<div class="team" id="team">
+    <div class="bg_team"></div>
+    <div class="bg_team bg2_team"></div>
+    <div class="bg_team bg3_team"></div>
+    <div class="container">
+        <div class="team__inner section">
+            <div class="title__team revealUp">
+                ПОЗНАКОМЬТЕСЬ С НАШЕЙ ПРЕКРАСНОЙ КОМАНДОЙ
+            </div>
+            <div class="line__container">
+                <div class="line__team"></div>
+            </div>
+            <div class="podtitle__team">
+                Мы - небольшая команда дизайнеров и разработчиков, которые помогают брендам с большими идеями.
+            </div>
+        </div>
+        <div class="peoples">
+            <div class="people">
+                <img src="team_img/my_logo.jpg" alt="" class="img__team">
+                <div class="name__people">
+                    Волынчук Максим
+                </div>
+                <div class="title__people">
+                    Креативный директор
+                </div>
+                <div class="podtitle__people">
+                    Имеются знания python, html, css. Занимаюсь созданием ботов, скриптов, парсеров, граберов, веб-сайтов (этот). Постоянно в поиске новых возможностей и идей для создания красивого и простого.
+                </div>
+                <div class="social">
+                    <a class="social__item" href="mailto:maksemqwerty@gmail.com">
+                        <img src="team_img/gmail.svg" class="social__img">
+                    </a>
+                </div>
+            </div>
+            <div class="people">
+                <img src="team_img/kostya_logo.jpg" alt="" class="img__team">
+                <div class="name__people">
+                    Грищук Константин
+                </div>
+                <div class="title__people">
+                    Ведущий дизайнер
+                </div>
+                <div class="podtitle__people">
+                    Имеются знания в области графики, 2D и 3D работы, photoshop, html, создании визиток, постеров. Редактирование фото и различных видов картинок. Создание 2D анимации. В процессе изучение 3D анимации.
+                </div>
+                <div class="social">
+                    <a class="social__item" href="#">
+                        <img src="team_img/gmail.svg" class="social__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--SKILLS-->
+<div class="skills bg-animado-blue" id="skills">
+    
+    
+    
+    <div class="container">
+        <div class="team__inner section">
+            <div class="title__skills revealUp">
+                У НАС ЕСТЬ НАВЫКИ!
+            </div>
+            <div class="line__container">
+                <div class="line__team"></div>
+            </div>
+            <div class="podtitle__skills">
+                Мы - небольшая команда дизайнеров и разработчиков, которая имеет знания во многих областях информационных технологий.
+            </div>
+            <div class="skills__items">
+                <div class="progress">
+                    <div class="progress__cont">
+                        <img src="skills_img/item1.png" class="progress__img"></div>
+                    <div class="skills__title">
+                        ВЕБ-ДИЗАЙН
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress__cont">
+                        <img src="skills_img/item2.png" class="progress__img">
+                    </div>
+                    <div class="skills__title">
+                        HTML / CSS
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress__cont">
+                        <img src="skills_img/item3.png" class="progress__img">
+                    </div>
+                    <div class="skills__title">
+                        ГРАФИКА
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress__cont">
+                        <img src="skills_img/item4.png" class="progress__img">
+                    </div>
+                    <div class="skills__title">
+                        PYTHON
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PORTFOLIO
+==========================================================================-->
+<div class="portfolio" id="portfolio">
+
+    
+    <div class="container">
+        <div class="portfolio__inner section">
+            <div class="title__portfolio revealUp">
+                НАШЕ ПОРТФОЛИО
+            </div>
+            <div class="line__container">
+                <div class="line__portfolio"></div>
+            </div>
+            <div class="podtitle__portfolio">
+                Мы - небольшая команда дизайнеров и разработчиков, которая имеет уже много выполненных работ.
+            </div>
+        </div>
+        <div class="work">
+            <!--Первая работа-->
+            <div class="work__inner">
+                <img src="portfolio_img/first.webp" alt="" class="work__img">
+                <div class="work__title">
+                    Красивые постеры
+                </div>
+            </div>
+            <!--Вторая работа-->
+            <div class="work__inner">
+                <img src="portfolio_img/second.webp" alt="" class="work__img">
+                <div class="work__title">
+                    Визитная карточка
+                </div>
+            </div>
+        </div>
+        <div class="work">
+            <!--Третья работа-->
+            <div class="work__inner">
+                <img src="portfolio_img/third.webp" alt="" class="work__img">
+                <div class="work__title">
+                    Photoshop картинки
+                </div>
+            </div>
+            <!--Четвертая работа-->
+            <div class="work__inner">
+                <img src="portfolio_img/fourth.webp" alt="" class="work__img">
+                <div class="work__title">
+                    Telegram боты
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END
+==========================================================================-->
+<div class="end spacer">
+    <div class="container">
+        <div class="end__inner">
+            <div class="end__text">
+                Made with love ♡ 2022.
+            </div>
+        </div>
+    </div>
+</div>
+<!--СКРИПТ
+==========================================================================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js "></script>
+<script src="app.js"></script>
+</body>
+</html>

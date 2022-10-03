@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Кодировка по умолчанию utf-8-->
+    <meta charset="utf-8">
+    <!--Ширина сайта равна ширине устройства-->
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <!--Подключение файла со стилями-->
+    <link rel="stylesheet" href="style_schedule.css">
+    <!--Подключение шрифта-->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--Подключение jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<!--HEADER
+==========================================================================-->
+<div class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="../index.html">
+                <img src="logo1.png" alt="" class="logo__img">
+            </a>
+            <div class="nav" id="nav">
+                <a class="nav__link monday__nav" href="#" data-scroll="#monday">Понедельник</a>
+                <a class="nav__link tuesday__nav" href="#" data-scroll="#tuesday">Вторник</a>
+                <a class="nav__link wednesday__nav" href="#" data-scroll="#wednesday">Среда</a>
+                <a class="nav__link thursday__nav" href="#" data-scroll="#thursday">Четверг</a>
+                <a class="nav__link friday__nav" href="#" data-scroll="#friday">Пятница</a>
+            </div>
+            <button class="burger" type="button" id="nav__toogle">
+                <span class="burger__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="mobile__pos">
+    <!--MONDAY
+==================================================-->
+<div class="monday" id="monday">
+    <div class="container">
+        <!--Понедельник-->
+        <div class="schedule__container">
+            <iframe src="https://script.google.com/macros/s/AKfycbym8-DnTU2kTLNH7ZWGn2an6W_4m-l6TK3JF9TkD_aL3MHGmLcDvG1-_BLhf2UIa_OkiQ/exec" class="schedule"></iframe>
+        </div>
+    </div>
+</div>
+<!--TUESDAY
+==================================================-->
+<div class="tuesday" id="tuesday">
+    <div class="container">
+        <!--Вторник-->
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="schedule__container">
+            <iframe src="https://script.google.com/macros/s/AKfycbyoH7E3hicP0rvoocz3_9gq5FJ_H8weB17mNWxVRoEDjHMzktQ7W4Enga8PsJ5jyxyV0g/exec" class="schedule"></iframe>
+        </div>
+    </div>
+</div>
+<!--WEDNESDAY
+==================================================-->
+<div class="wednesday" id="wednesday">
+    <div class="bg_team"></div>
+    <div class="bg_team bg2_team"></div>
+    <div class="bg_team bg3_team"></div>
+    <div class="container">
+        <!--Среда-->
+        <div class="schedule__container">
+            <iframe src="https://script.google.com/macros/s/AKfycbziwWB8KcX5PoDUfxai5ThE2n3wxTMlfmZ4H0dQAYp0AzG64h3sCVy_gbCHTg7AZiq1gQ/exec" class="schedule"></iframe>
+        </div>
+    </div>
+</div>
+<!--THURSDAY
+==================================================-->
+<div class="thursday bg-animado-blue" id="thursday">
+    <div class="container">
+        <!--Четверг-->
+        <div class="schedule__container">
+            <iframe src="https://script.google.com/macros/s/AKfycbwqR1XK89nMKEHHIetg799Yrm7mgblXMbSdFndW6clpOsCQyRmX7VeVls5UAPmgRRevAQ/exec" class="schedule"></iframe>
+        </div>
+    </div>
+</div>
+<!--FRIDAY
+==================================================-->
+<div class="friday" id="friday">
+    <div class="container">
+        <!--Пятница-->
+        <div class="schedule__container">
+            <iframe src="https://script.google.com/macros/s/AKfycbw_ylG3SU0XHs-DTsrhXOUc62Ei8dJbBmTYR0FP49IIJl4n1U-FsvaSPBUqyrCtVPfMyQ/exec" class="schedule"></iframe>
+        </div>
+    </div>
+</div>
+</div>
+<!--END
+==================================================-->
+<div class="end">
+    <div class="container">
+        <div class="end__inner">
+            <div class="end__text">
+                Made with love ♡ 2022.
+            </div>
+        </div>
+    </div>
+</div>
+<!--СКРИПТ
+==================================================-->
+<script src="app.js"></script>
+</body>
+</html>
